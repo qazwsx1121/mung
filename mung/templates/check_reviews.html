@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리뷰 확인</title>
+</head>
+<body>
+    <h1>저장된 리뷰 목록</h1>
+    <ul>
+        {% for review in reviews %}
+            <li>{{ review[0] }} - {{ review[1] }} - {{ review[2] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
